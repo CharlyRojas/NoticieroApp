@@ -1,0 +1,50 @@
+<div class="row">
+  <div class="col-12">
+    <img src="" alt="" class="img-fluid">
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <h1 style="color: white;">{{noticia.name}}</h1>
+  </div>
+</div>
+<br>
+
+<div class="row">
+  <div class="col-12" style="color: white;">
+    {{noticia.description}}
+  </div>
+</div>
+<br><br>
+<div class="row">
+  <div class="col-12">
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let ingredient of noticia.ingredients">
+        {{ingredient.name}}({{ingredient.amount}})
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="row">
+<div class="col-7"><br>
+    <p style="color: white;">Por: Noticias Tehuacan</p><br>
+    <div class="row"><br>
+      <div class="col-12">
+        <div class="btn-group">
+          <button class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
+            Gestionar Noticia
+          </button>
+          <div class="dropdown-menu">
+            <a style="cursor:pointer" class="dropdown-item" (click)="onAddToShoppingList()">Lista de Noticias</a>
+            <a style="cursor:pointer" class="dropdown-item" (click)="onEditNoticia()">Editar Noticia</a>
+            <a style="cursor:pointer" class="dropdown-item">Eliminar Noticia</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-5"><br>
+      <img src="http://www.agenciainformativaudem.com/wp-content/uploads/2016/09/tumblr_mjufifA1u21rsj0nco1_500.jpg" width="70" height="110">
+    </div>
+</div>

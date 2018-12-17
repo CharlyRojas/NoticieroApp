@@ -1,0 +1,17 @@
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <button class="btn btn-primary" style="border-radius: 40%; margin-left: 50%;" (click)="onNewNoticia()">
+      Agregar Nueva Noticia
+    </button>
+    <br><br>
+  </div>
+  <br><br>
+  <div class="row">
+    <div class="col-md-12">
+     <app-noticias-item *ngFor="let noticiaEle of noticias; let i = index" [noticia]="noticiaEle" [index]= "i">
+
+     </app-noticias-item>
+    </div>
+  </div>
+</div>

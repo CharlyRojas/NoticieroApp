@@ -1,0 +1,12 @@
+<a style="cursor:pointer;" class="list-group-item list-group-item-action clearfix" 
+[routerLink]="[index]" routerLinkActive="active">
+ 
+  <div class="float-left" style="text-align: center;">
+    <h2>{{noticia.name}}</h2>
+    <h5>{{noticia.description}}</h5>
+  </div>
+  <br>
+  <span class="float-right" >
+    <img [src]="noticia.imagePath"  class="img fluid" width="400px" style="border-radius: 10%;">
+  </span>
+</a>

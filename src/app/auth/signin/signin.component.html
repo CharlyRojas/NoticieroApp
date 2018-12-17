@@ -1,0 +1,14 @@
+<!-- 
+Design register pure CSS
+Developed by @mrjopino
+-->
+<p class="texto">Tehuacan Puebla</p>
+<div class="Registro">
+    <img src="https://www.noticiasaldiayalahora.co/wp-content/uploads/2017/09/Noticiasaldiayalahorashare.png" height="200" width="250" style="border-radius: 50%;">
+<br><br>
+<form (ngSubmit)="onSignup(f)" #f="ngForm">
+
+<span class="fontawesome-user"></span><input type="text" id="email" name="email" ngModel class="form-control" required placeholder="Usuario" autocomplete="off">
+<span class="fontawesome-lock"></span><input type="password" id="password" name="password" ngModel class="form-control" required placeholder="Contraseña" autocomplete="off">
+<input type="submit" value="Iniciar sesion" title="Iniciar sesion">
+</form>
